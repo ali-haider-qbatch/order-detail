@@ -1,0 +1,387 @@
+@import "./variable";
+@mixin Buttons {
+  border-radius: 50px;
+  color: $Alabaster;
+  margin: 0 5px;
+  font-size: 0.8rem;
+  &:hover {
+    color: $Alabaster;
+  }
+  .button-icon {
+    margin-right: 5px;
+    font-size: 1rem;
+    vertical-align: middle;
+    margin-bottom: 3px;
+    color: $Alabaster;
+  }
+  .button-img {
+    width: 18px;
+    margin-bottom: 3px;
+  }
+}
+.order-details {
+  min-height: 100%;
+  background-color: $Ebony-dark;
+  color: $white;
+  margin-top: 65px;
+}
+.order-heading {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: $Alabaster;
+}
+.alert-seller {
+  background-color: $Cinderella;
+  color: $Lotus;
+  font-size: 0.8125rem;
+}
+.alert-detail {
+  background-color: $Oxford-Blue;
+  color: $Periwinkle-Gray;
+  font-size: 0.875rem;
+}
+.mark-button {
+  @include Buttons;
+  background-color: $Ronchi;
+}
+.cancel-button {
+  @include Buttons;
+  background-color: $Froly;
+}
+.plus-button {
+  @include Buttons;
+  background-color: $Shamrock;
+}
+.manual-button {
+  @include Buttons;
+  color: $Jacarta;
+  background-color: $Catskill-White;
+  .button-icon {
+    color: $Jacarta;
+  }
+  &:hover {
+    color: $Jacarta;
+    background-color: $Catskill-White;
+  }
+}
+.customer-info {
+  background-color: $Ebony-Clay1;
+  padding: 14px;
+  border-radius: 5px;
+  min-height: 354px;
+  .info-link {
+    font-size: 13px;
+    display: block;
+    color: $Royal-Blue;
+    margin-bottom: 26px;
+  }
+  .info-heading {
+    font-weight: 600;
+    color: $Periwinkle-Gray;
+    font-size: 0.875rem;
+    margin-bottom: 30px;
+  }
+  .margin-bottom {
+    margin-bottom: 26px;
+  }
+  .info-small {
+    color: $Periwinkle-Gray;
+    font-size: 0.625rem;
+  }
+  .info-paragraph {
+    font-size: 0.625rem;
+    font-weight: 600;
+    .shipment-icon {
+      font-size: 10px;
+      margin-right: 5px;
+    }
+  }
+  .copy {
+    background-color: $Ebony-dark;
+    border-radius: 50px;
+    padding: 1px;
+    .copy-icon {
+      font-size: 0.625rem;
+      padding: 4px;
+    }
+  }
+  .dropdown {
+    .status-dropdown {
+      background-color: $Oxford-Blue;
+      color: $white;
+      width: 65%;
+      display: flex;
+      justify-content: space-between;
+      border-radius: 50px;
+      padding: 4px 13px;
+      font-size: 0.75rem;
+      border: $dropdown-background;
+      &::after {
+        margin-top: 8px;
+      }
+    }
+    .dropdown-menu {
+      background-color: $Ebony-Clay;
+      min-width: 110px;
+      padding: 0;
+      .dropdown-item {
+        color: $Alabaster;
+      }
+      .dropdown-item:hover {
+        color: $Ebony-Clay;
+      }
+    }
+  }
+  .cost-heading {
+    color: $Periwinkle-Gray;
+  }
+  .shipped {
+    color: $Shamrock;
+    background-color: $Shamrock-light;
+    padding: 6px 14px;
+    border-radius: 50px;
+    font-size: 0.625rem;
+    font-weight: 600;
+  }
+  .log-table {
+    white-space: nowrap;
+    .log-td {
+      color: $white;
+      font-size: 10px;
+      border: none;
+    }
+    .log-thead .log-tr {
+      background-color: $Oxford-Blue;
+      color: $white;
+      font-size: 10px;
+      .log-th {
+        border: none;
+        color: $Periwinkle-Gray;
+      }
+    }
+    .screenshots {
+      font-size: 0.5rem;
+      margin-left: 8px;
+    }
+  }
+}
+.order-items-table {
+  .detail-table {
+    white-space: nowrap;
+  }
+  background-color: $Ebony-Clay1;
+  .detail-thead {
+    .detail-tr {
+      background-color: $Oxford-Blue;
+      color: $Periwinkle-Gray;
+      font-size: 10px;
+      .detail-th {
+        border: none;
+        padding: 14.4px;
+      }
+    }
+  }
+  .detail-tbody {
+    .detail-tbodyth,
+    .detail-tbodytd {
+      border-top: $dropdown-background;
+      color: $Rock-Blue;
+      font-size: 10px;
+      padding: 30px;
+    }
+  }
+  .media-small {
+    color: $Rock-Blue;
+  }
+}
+.img-detail {
+  color: $white;
+}
+.tracking-number {
+  color: $Royal-Blue;
+  font-weight: 600;
+}
+.container {
+  display: block;
+  position: relative;
+  padding-left: 0px;
+  margin-bottom: 0px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 20px;
+  height: 15px;
+  width: 15px;
+  background-color: $Oxford-Blue;
+  border-radius: 3px;
+}
+
+.container:hover input ~ .checkmark {
+  background-color: $Oxford-Blue;
+}
+.container input:checked ~ .checkmark {
+  background-color: $Royal-Blue;
+}
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+.container .checkmark:after {
+  left: 6px;
+  top: 4px;
+  width: 3px;
+  height: 7px;
+  border: solid $white;
+  border-width: 0 1px 1px 0;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.checkmark-2 {
+  position: absolute;
+  top: -11px;
+  left: 37px;
+  height: 15px;
+  width: 15px;
+  background-color: $Table-color;
+  border-radius: 3px;
+}
+
+.container:hover input ~ .checkmark-2 {
+  background-color: $Table-color;
+}
+.container input:checked ~ .checkmark-2 {
+  background-color: $Royal-Blue;
+}
+.checkmark-2:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+.container input:checked ~ .checkmark-2:after {
+  display: block;
+}
+.container .checkmark-2:after {
+  left: 6px;
+  top: 4px;
+  width: 3px;
+  height: 7px;
+  border: solid $white;
+  border-width: 0 1px 1px 0;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.media {
+  .media-img {
+    width: 38.4px;
+    margin-right: 5px;
+  }
+}
+.supplier {
+  background-color: $Shamrock;
+  border-radius: 50px;
+  color: $white;
+  padding: 4px 10px;
+}
+.new {
+  background: $background-rockblue;
+  padding: 5px 20px;
+  border-radius: 50px;
+  color: $Rock-Blue;
+}
+.Processing {
+  padding: 5px 10px;
+  border-radius: 50px;
+  background: $dark-ronchi;
+  color: $Ronchi;
+}
+.Processed {
+  padding: 5px 10px;
+  border-radius: 50px;
+  background: $dark-black;
+  color: $Royal-Blue;
+}
+.copy-icon {
+  border-radius: 50px;
+  padding: 2px;
+  background: $Ebony-dark;
+  margin: 2px;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 45px;
+  height: 22px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: $Bali-Hai;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 16px;
+  width: 16px;
+  left: 2px;
+  top: 3px;
+  bottom: 4px;
+  background-color: $Oxford-Blue;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: $Royal-Blue;
+}
+
+input:focus + .slider {
+  box-shadow: $slider-background;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 50px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}

@@ -1,0 +1,20 @@
+.hide-menu {
+  .sidebar {
+    width: 112px;
+  }
+  .layout {
+    width: calc(100% - 112px);
+  }
+  .header {
+    left: 112px;
+  }
+  .text,
+  .dark-logo {
+    display: none;
+  }
+  .logo-sidebar {
+    .light-logo {
+      display: none;
+    }
+  }
+}

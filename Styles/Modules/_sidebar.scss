@@ -1,0 +1,72 @@
+@import "./variable";
+.sidebar {
+  background-color: $Ebony-Clay1;
+  color: $Alabaster;
+  min-height: 100vh;
+  width: 280px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  overflow-x: hidden;
+  transition: 0.3s;
+  .sidebar-list {
+    min-height: 100%;
+    .sidebar-li {
+      padding: 16px 45px;
+
+      cursor: pointer;
+      .sidebar-anchor {
+        color: $Periwinkle-Gray;
+        font-size: 0.8125rem;
+        font-weight: 400;
+        &:hover {
+          color: $Alabaster;
+          text-decoration: none;
+        }
+      }
+      .sidebar-icon {
+        margin-right: 10px;
+      }
+
+      .active {
+        color: $Alabaster;
+      }
+    }
+  }
+  .logo-sidebar {
+    padding: 36px 42px;
+  }
+}
+.number-input {
+  width: 50%;
+  .dropdown .dropdown-toggle::after {
+    display: none;
+  }
+}
+.counter-icon {
+  position: absolute;
+  top: 8px;
+  right: 17px;
+}
+.light-icon,
+.down-light {
+  display: none;
+}
+.down-arrow {
+  position: absolute;
+  top: 13px;
+  right: 8px;
+  width: 10px;
+}
+.full-hide {
+  .sidebar {
+    width: 0;
+  }
+  .layout {
+    width: 100%;
+  }
+  .header {
+    left: 0;
+  }
+}

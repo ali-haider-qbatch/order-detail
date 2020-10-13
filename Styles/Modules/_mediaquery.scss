@@ -1,0 +1,142 @@
+@media (max-width: 1200px) {
+  .customer-info {
+    .info-heading {
+      font-size: 0.625rem;
+    }
+  }
+}
+@media (max-width: 1400px) {
+  .customer-info .info-link {
+    font-size: 0.625rem;
+  }
+}
+@media (max-width: 1199px) {
+}
+@media (max-width: 1149px) {
+}
+@media (max-width: 991px) {
+  .menu-bar {
+    display: none;
+  }
+}
+@media (max-width: 768px) {
+  .balance {
+    font-size: 0.5rem;
+    padding: 10px 10px;
+  }
+  .change-color-button {
+    font-size: 0.5rem;
+  }
+  .bell .bell-icon {
+    font-size: 1.2rem;
+  }
+  .bell .icon-badge {
+    padding: 3px;
+  }
+  .avatar-img .q-batch {
+    margin-left: 0px;
+    font-size: 0.8125rem;
+  }
+  .hide-menu {
+    .header {
+      left: 65px;
+    }
+    .layout {
+      width: calc(100% - 65px);
+    }
+    .sidebar {
+      width: 65px;
+      .sidebar-list .sidebar-li {
+        padding: 16px 20px;
+        text-align: center;
+      }
+      .logo-sidebar {
+        padding: 36px 20px;
+      }
+    }
+  }
+  .nav-tabs .nav-link {
+    padding: 0.5rem 0.2rem;
+  }
+
+  .bell {
+    margin: 6px 15px;
+  }
+}
+@media only screen and (max-width: 1800px) and (min-width: 1400px) {
+  .counter-icon,
+  .light-mode .light-icon {
+    right: 31px;
+  }
+}
+@media (max-width: 575px) {
+  .header {
+    padding: 10px;
+  }
+  .layout .inner-layout {
+    margin-top: 64px;
+  }
+  .mark-button,
+  .cancel-button,
+  .plus-button,
+  .manual-button {
+    font-size: 0.6rem;
+    .button-img {
+      width: 15px;
+    }
+    .button-icon {
+      font-size: 0.8rem;
+      margin-bottom: 0;
+    }
+  }
+  .order-heading {
+    font-size: 1.2rem;
+  }
+}
+@media (max-width: 475px) {
+  .mark-button,
+  .cancel-button,
+  .plus-button,
+  .manual-button {
+    font-size: 0.4rem;
+    padding: 7px 9px;
+    margin: 0 3px;
+    .button-img {
+      width: 10px;
+    }
+    .button-icon {
+      font-size: 0.6rem;
+      margin-bottom: 0;
+    }
+  }
+  .alert-detail {
+    font-size: 0.6rem;
+  }
+}
+@media (max-width: 375px) {
+  .header-badges {
+    flex-direction: column;
+    align-items: center;
+  }
+  .order-details {
+    margin-top: 137px;
+  }
+  .mark-button,
+  .cancel-button,
+  .plus-button,
+  .manual-button {
+    font-size: 0.3rem;
+    padding: 4px 4px;
+    margin: 0 2px;
+    .button-img {
+      width: 10px;
+    }
+    .button-icon {
+      font-size: 0.6rem;
+      margin-bottom: 0;
+    }
+  }
+  .small-screen {
+    padding: 0;
+  }
+}

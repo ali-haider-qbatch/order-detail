@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
+  <link rel="stylesheet" href="Styles/Styles.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="js/index.js"></script>
+</head>
+
+<body class="body">
+  <section>
+    <div class="dark-mode">
+      <div id="hide-menu">
+        <div class="sidebar">
+          <div class="d-flex logo-sidebar">
+            <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg"
+              class="mr-1 dark-svg">
+              <path
+                d="M6.02868 16.1207C5.15932 16.9907 3.74894 16.9907 2.87954 16.1207C2.02324 15.265 2.00958 13.8849 2.83916 13.0125L7.5322 8.31951C6.08078 7.93142 4.47138 8.28864 3.31108 9.39212L1.22439 11.4788C-0.43481 13.2235 -0.407498 15.9837 1.30514 17.6952C3.0439 19.4351 5.86465 19.4351 7.60341 17.6952L9.52738 15.7712C10.6935 14.6058 11.078 12.9544 10.681 11.4685L6.02868 16.1207Z"
+                fill="white" />
+              <path
+                d="M17.6951 1.30514C15.9837 -0.407498 13.2235 -0.43481 11.4788 1.22439L9.3921 3.31108C8.28865 4.47142 7.93144 6.08082 8.31949 7.5322L13.0125 2.83916C13.8849 2.00958 15.265 2.02324 16.1207 2.87954C16.9907 3.74894 16.9907 5.15928 16.1207 6.02868L11.4684 10.681C12.9543 11.078 14.6057 10.6936 15.7711 9.52738L17.6951 7.60341C19.4351 5.86465 19.4351 3.0439 17.6951 1.30514Z"
+                fill="white" />
+              <path
+                d="M6.11487 12.8856C6.54957 13.3206 7.25476 13.3206 7.68942 12.8856L12.8856 7.68942C13.3206 7.25472 13.3206 6.54953 12.8856 6.11487C12.4577 5.6867 11.7677 5.67987 11.3315 6.09468L6.09465 11.3316C5.67987 11.7677 5.6867 12.4577 6.11487 12.8856Z"
+                fill="white" />
+            </svg>
+            <img class="dark-logo" src="Assets/Sidebar-logo/CnctOrange.svg" />
+          </div>
+          <div class="sidebar-list">
+            <ul class="list-unstyled">
+              <li class="sidebar-li active">
+                <a class="sidebar-anchor active"> <i class="fas fa-shopping-cart sidebar-icon"></i><span class="text">
+                    orders</span></a>
+              </li>
+              <li class="sidebar-li">
+                <a class="sidebar-anchor"> <i class="fas fa-bars sidebar-icon"></i><span
+                    class="text">Listings</span></a>
+              </li>
+              <li class="sidebar-li">
+                <a class="sidebar-anchor"> <i class="fas fa-user-friends sidebar-icon"></i><span class="text">Amazon
+                    Receiper</span></a>
+              </li>
+              <li class="sidebar-li">
+                <a class="sidebar-anchor"> <i class="fas fa-bars sidebar-icon"></i> <span
+                    class="text">Listings</span></a>
+              </li>
+              <li class="sidebar-li">
+                <a class="sidebar-anchor"> <i class="fas fa-user-friends sidebar-icon"></i><span
+                    class="text">Suppliers</span></a>
+              </li>
+              <li class="sidebar-li">
+                <a class="sidebar-anchor"> <i class="fas fa-cog sidebar-icon"></i><span class="text">
+                    Settings</span></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="layout">
+          <div class="header">
+            <div class="row m-0">
+              <div class="col-md-2 col-sm-2 col-xs-2 ">
+                <span class="menu-bar">
+                  <svg width="18" height="15" viewBox="0 0 18 15" fill="none" xmlns="http://www.w3.org/2000/svg"
+                    class="mt-3" id="toggle-button">
+                    <line x1="1.31134e-07" y1="1.5" x2="18" y2="1.5" stroke="#A6B0CF" stroke-width="3" />
+                    <line x1="1.31134e-07" y1="7.5" x2="18" y2="7.5" stroke="#A6B0CF" stroke-width="3" />
+                    <line x1="1.31134e-07" y1="13.5" x2="18" y2="13.5" stroke="#A6B0CF" stroke-width="3" />
+                  </svg>
+                </span>
+              </div>
+              <div class="col-md-10 col-sm-10 col-xs-10">
+                <div class="header-badges">
+                  <div class=" balance">
+                    <span class="wallet-img">
+                      <img src="Assets/Header/vo.png" />
+                    </span>
+                    <span>BCE Balance : 686</span>
+                  </div>
+                  <div class="bell">
+                    <i class="far fa-bell bell-icon"></i>
+                    <span class="badge icon-badge">14</span>
+                  </div>
+                  <div class="avatar-img">
+                    <img src="Assets/Avatar/Ellipse 1.svg" alt="Avatar" class="avatar">
+                    <span class="q-batch">Q Batch </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <section class="order-details p-4">
+            <h1 class="order-heading mb-4 mt-2">Order Details</h1>
+            <div class="alert alert-seller" role="alert">
+              <img src="Assets/Alert/info.svg"> Prime seller-OSS
+            </div>
+            <div class="alert alert-detail" role="alert">
+              Order Details:<b> Walmart 3806236010062 / 5242034979990</b>
+            </div>
+            <div class="d-flex justify-content-end mt-4 mb-3">
+              <button type="button" class="btn mark-button">
+                <img class="button-img" src="./Assets/Buttons-Icons/info.svg" /> Mark As Issue
+              </button>
+              <button type="button" class="btn cancel-button">
+                <i class="fas fa-times button-icon"></i>Cancel Order
+              </button>
+              <button type="button" class="btn plus-button">
+                <i class="fas fa-plus button-icon"></i>Create Return
+              </button>
+            </div>
+            <div class="row">
+              <div class="col-lg-4 col-md-6 col-sm-12 mb-3">
+                <div class="customer-info">
+                  <div class="row">
+                    <div class="col-lg-6 col-md-6 ">
+                      <h6 class="info-heading">Customer Info</h6>
+                      <div class="margin-bottom">
+                        <small class="info-small">Shipping Name</small>
+                        <p class="info-paragraph">
+                          Elizabeth Cormer
+                          <span class="copy" data-toggle="tooltip" data-placement="top" title="Copy"><i
+                              class="far fa-copy copy-icon"></i></span>
+                        </p>
+                      </div>
+                      <div class="margin-bottom">
+                        <small class="info-small">Order Date</small>
+                        <p class="info-paragraph">Sep 09, 2020 06:33 PM</p>
+                      </div>
+
+                    </div>
+                    <div class="col-lg-6 col-md-6 ">
+                      <a class="info-link" href="#"> <ins>Edit Shipping Details</ins> </a>
+                      <small class="info-small">Buyer Name</small>
+                      <p class="mb-0 info-paragraph ">
+                        John Doe jany
+                        <span class="copy" data-toggle="tooltip" data-placement="top" title="Copy"><i
+                            class="far fa-copy copy-icon"></i></span>
+                      </p>
+                    </div>
+                    <div class="col-md-12">
+                      <div class="margin-bottom">
+                        <small class="info-small">Shipment Address</small>
+                        <p class="mb-0 info-paragraph">
+                          <i class="fas fa-user shipment-icon"></i>Rebecca Carr
+                          <span class="copy" data-toggle="tooltip" data-placement="top" title="Copy"><i
+                              class="far fa-copy copy-icon "></i></span>
+                        </p>
+                        <p class="mb-0 info-paragraph">
+                          <i class="fas fa-home shipment-icon"></i>22899 WEATHER VANE<br> CT
+                          MATTAWAN, MI 49071-8501 <span class="copy" data-toggle="tooltip" data-placement="top"
+                            title="Copy"><i class="far fa-copy copy-icon"></i></span>
+                        </p>
+                        <p class="info-paragraph">
+                          <i class="fas fa-phone shipment-icon"></i>612-226-4803
+                          <span class="copy" data-toggle="tooltip" data-placement="top" title="Copy"><i
+                              class="far fa-copy copy-icon"></i></span>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6 col-sm-12 mb-3">
+                <div class="customer-info">
+                  <h6 class="cost-heading">Total Costs Details</h6>
+                  <div class="row">
+                    <div class="col-md-4 mb-4">
+                      <small class="info-small"> Total Price </small>
+                      <p class="info-paragraph ">$37.70</p>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                      <small class="info-small"> Total Cost </small>
+                      <p class="info-paragraph ">$14.20</p>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                      <small class="info-small"> Estimated Profit </small>
+                      <p class="info-paragraph ">$10.10</p>
+                    </div>
+                    <div class="col-md-12 mb-2">
+                      <small class="info-small"> Order Date </small>
+                      <p class="info-paragraph ">Sep 18, 2020 8:46 PM</p>
+                    </div>
+                    <div class="col-md-12 mb-2">
+                      <small class="info-small"> Expected Ship Date </small>
+                      <p class="info-paragraph ">Sep 20, 2020 12:01 AM</p>
+                    </div>
+                    <div class="col-md-6">
+                      <small class="info-small"> Expected Delivery Date </small>
+                      <p class="info-paragraph ">Oct 07, 2020 3:00 PM</p>
+                    </div>
+                    <div class="col-md-6">
+                      <small class="info-small"> Order Level Status </small>
+                      <div class="dropdown">
+                        <button class="btn status-dropdown btn-sm dropdown-toggle" type="button" id="dropdownMenuButton"
+                          data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          New
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                          <a class="dropdown-item" href="#">Old</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6 col-sm-12 mb-3">
+                <div class="customer-info">
+                  <h6 class="cost-heading">Order Status & Log</h6>
+                  <small class="d-block mb-2 info-small ">Current BOT Status</small>
+                  <span class="shipped">Shipped</span>
+                  <span>
+                    <p class="mt-4 info-paragraph "><ins>ORDER LOG</ins></p>
+                    <div class="row">
+                      <div class="col-md-12">
+                        <table class="table log-table table-responsive">
+                          <thead class="log-thead">
+                            <tr class="log-tr">
+                              <th class="log-th" scope="col">Created by</th>
+                              <th class="log-th" scope="col">Added on</th>
+                              <th class="log-th" scope="col">Note</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td class="log-td">BOT attempted</td>
+                              <td class="log-td">Sep 19, 6:30pm</td>
+                              <td class="log-td">
+                                <span class="d-flex">
+                                  @Sep 19, 6:30pm
+                                  <a href="#" class="screenshots"><ins>View Screenshot</ins></a>
+                                </span>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td class="log-td">BOT attempted</td>
+                              <td class="log-td">Sep 19, 6:30pm</td>
+                              <td class="log-td">
+                                <span class="d-flex">
+                                  @Sep 19, 6:30pm
+                                  <a href="#" class="screenshots"><ins>View Screenshot</ins></a>
+                                </span>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td class="log-td">BOT attempted</td>
+                              <td class="log-td">Sep 19, 6:30pm</td>
+                              <td class="log-td">
+                                <span class="d-flex">
+                                  @Sep 19, 6:30pm
+                                  <a href="#" class="screenshots"><ins>View Screenshot</ins></a>
+                                </span>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                </div>
+              </div>
+            </div>
+            <div class="row mt-4 m-0">
+              <div class="col-md-4">
+                <h5 class="order-heading">ORDER ITEMS</h5>
+              </div>
+              <div class="col-md-8 small-screen">
+                <div class="d-flex justify-content-end">
+                  <button type="button" class="btn manual-button">
+                    <i class="fas fa-bars button-icon "></i>Add New Manual Order
+                  </button>
+                  <button type="button" class="btn plus-button">
+                    <i class="fas fa-plus button-icon "></i>Add New Manual Order
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="row m-0">
+              <div class="col-md-12">
+                <div class="order-items-table mt-4">
+                  <div class="table-responsive">
+                    <table class="table  detail-table">
+                      <thead class="detail-thead">
+                        <tr class="detail-tr">
+                          <th scope="col" class="detail-th">
+                            <label class="container">
+                              <input type="checkbox" />
+                              <span class="checkmark-2"></span>
+                            </label>
+                          </th>
+                          <th class="detail-th" scope="col">Product Details</th>
+                          <th class="detail-th" scope="col">Quantity</th>
+                          <th class="detail-th" scope="col">Price</th>
+                          <th class="detail-th" scope="col">Total</th>
+                          <th class="detail-th" scope="col">Supplier Info</th>
+                          <th class="detail-th" scope="col">AO Available</th>
+                        </tr>
+                      </thead>
+                      <tbody class="detail-tbody">
+                        <tr>
+                          <th scope="row" class="detail-tbodyth">
+                            <label class="container">
+                              <input type="checkbox" />
+                              <span class="checkmark"></span>
+                            </label>
+                          </th>
+                          <td class="detail-tbodytd">
+                            <div class="media">
+                              <img class="media-img" src="./Assets/Tables-img/table-detail.svg" alt="..." />
+                              <div class="media-body">
+                                <p class="m-0 img-detail">Filtere- Allergern Defence</p>
+                                <small> <span class="border-bottom border-secondary pb-2 media-small">
+                                    BSR-SCHOOL-9-7-20-ID-001257
+
+                                </small>
+
+                              </div>
+                            </div>
+                          </td>
+                          <td class="detail-tbodytd">4</td>
+                          <td class="detail-tbodytd">$59.63</td>
+                          <td class="detail-tbodytd">$59.63</td>
+                          <td class="detail-tbodytd"><span class="supplier">
+                              supplier Info
+                            </span></td>
+                          <td class="detail-tbodytd">
+                            <label class="switch">
+                              <input type="checkbox">
+                              <span class="slider round"></span>
+                            </label>
+                          </td>
+                        </tr>
+                        <tr>
+                          <th scope="row" class="detail-tbodyth">
+                            <label class="container">
+                              <input type="checkbox" />
+                              <span class="checkmark"></span>
+                            </label>
+                          </th>
+                          <td class="detail-tbodytd">
+                            <div class="media">
+                              <img class="media-img" src="./Assets/Tables-img/fever-tree.svg" alt="..." />
+                              <div class="media-body">
+                                <p class="m-0 img-detail">Fever- Tree</p>
+                                <small> <span class="border-bottom border-secondary pb-2 media-small">
+                                    BSR-SCHOOL-9-7-20-ID-001257
+
+                                </small>
+
+                              </div>
+                            </div>
+                          </td>
+                          <td class="detail-tbodytd">4</td>
+                          <td class="detail-tbodytd">$59.63</td>
+                          <td class="detail-tbodytd">$59.63</td>
+                          <td class="detail-tbodytd"><span class="supplier">
+                              supplier Info
+                            </span></td>
+                          <td class="detail-tbodytd">
+                            <label class="switch">
+                              <input type="checkbox" checked>
+                              <span class="slider round"></span>
+                            </label>
+                          </td>
+                        </tr>
+                        <tr>
+                          <th scope="row" class="detail-tbodyth">
+                            <label class="container">
+                              <input type="checkbox" />
+                              <span class="checkmark"></span>
+                            </label>
+                          </th>
+                          <td class="detail-tbodytd">
+                            <div class="media">
+                              <img class="media-img" src="./Assets/Tables-img/tree.svg" alt="..." />
+                              <div class="media-body">
+                                <p class="m-0 img-detail">Fever- Tree</p>
+                                <small> <span class="border-bottom border-secondary pb-2 media-small">
+                                    BSR-SCHOOL-9-7-20-ID-001257
+
+                                </small>
+
+                              </div>
+                            </div>
+                          </td>
+                          <td class="detail-tbodytd">4</td>
+                          <td class="detail-tbodytd">$59.63</td>
+                          <td class="detail-tbodytd">$59.63</td>
+                          <td class="detail-tbodytd"><span class="supplier">
+                              supplier Info
+                            </span></td>
+                          <td class="detail-tbodytd">
+                            <label class="switch">
+                              <input type="checkbox">
+                              <span class="slider round"></span>
+                            </label>
+                          </td>
+                        </tr>
+                        <tr>
+                          <th scope="row" class="detail-tbodyth">
+                            <label class="container">
+                              <input type="checkbox" />
+                              <span class="checkmark"></span>
+                            </label>
+                          </th>
+                          <td class="detail-tbodytd">
+                            <div class="media">
+                              <img class="media-img" src="./Assets/Tables-img/logo.svg" alt="..." />
+                              <div class="media-body">
+                                <p class="m-0 img-detail">Lego Elves ...</p>
+                                <small> <span class="border-bottom border-secondary pb-2 media-small">
+                                    BSR-SCHOOL-9-7-20-ID-001257
+
+                                </small>
+
+                              </div>
+                            </div>
+                          </td>
+                          <td class="detail-tbodytd">4</td>
+                          <td class="detail-tbodytd">$59.63</td>
+                          <td class="detail-tbodytd">$59.63</td>
+                          <td class="detail-tbodytd"><span class="supplier">
+                              supplier Info
+                            </span></td>
+                          <td class="detail-tbodytd">
+                            <label class="switch">
+                              <input type="checkbox" checked>
+                              <span class="slider round"></span>
+                            </label>
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <th scope="row" class="detail-tbodyth">
+                            <label class="container">
+                              <input type="checkbox" />
+                              <span class="checkmark"></span>
+                            </label>
+                          </th>
+                          <td class="detail-tbodytd">
+                            <div class="media">
+                              <img class="media-img" src="./Assets/Tables-img/method.svg" alt="..." />
+                              <div class="media-body">
+                                <p class="m-0 img-detail">Method- Laundary Agent ...</p>
+                                <small> <span class="border-bottom border-secondary pb-2 media-small">
+                                    BSR-SCHOOL-9-7-20-ID-001257
+
+                                </small>
+
+                              </div>
+                            </div>
+                          </td>
+                          <td class="detail-tbodytd">4</td>
+                          <td class="detail-tbodytd">$59.63</td>
+                          <td class="detail-tbodytd">$59.63</td>
+                          <td class="detail-tbodytd"><span class="supplier">
+                              supplier Info
+                            </span></td>
+                          <td class="detail-tbodytd">
+                            <label class="switch">
+                              <input type="checkbox" checked>
+                              <span class="slider round"></span>
+                            </label>
+                          </td>
+                        </tr>
+
+
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="ml-2 mt-4 mb-4">
+              <h5 class="mb-0 order-heading">SUPPLIER ORDERS</h5>
+            </div>
+            <div class="row m-0">
+              <div class="col-md-12">
+                <div class="order-items-table mt-4">
+                  <div class="table-responsive">
+                    <table class="table  detail-table">
+                      <thead class="detail-thead">
+                        <tr class="detail-tr">
+                          <th scope="col" class="detail-th">
+                            <label class="container">
+                              <input type="checkbox" />
+                              <span class="checkmark-2"></span>
+                            </label>
+                          </th>
+                          <th class="detail-th" scope="col">Product Details</th>
+                          <th class="detail-th" scope="col">Quantity</th>
+                          <th class="detail-th" scope="col">Price</th>
+                          <th class="detail-th" scope="col">Total</th>
+                          <th class="detail-th" scope="col">Supplier</th>
+                          <th class="detail-th" scope="col">Tracking ID & Status</th>
+                          <th class="detail-th" scope="col">Status</th>
+                          <th class="detail-th" scope="col">AO Available</th>
+                        </tr>
+                      </thead>
+                      <tbody class="detail-tbody">
+                        <tr>
+                          <th scope="row" class="detail-tbodyth">
+                            <label class="container">
+                              <input type="checkbox" />
+                              <span class="checkmark"></span>
+                            </label>
+                          </th>
+                          <td class="detail-tbodytd">
+                            <div class="media">
+                              <img class="media-img" src="./Assets/Tables-img/table-detail.svg" alt="..." />
+                              <div class="media-body">
+                                <p class="m-0 img-detail">Filtere- Allergern Defence</p>
+                                <small> <span class="border-bottom border-secondary pb-2 media-small">
+                                    BSR-SCHOOL-9-7-20-ID-001257
+
+                                </small>
+
+                              </div>
+                            </div>
+                          </td>
+                          <td class="detail-tbodytd">4</td>
+                          <td class="detail-tbodytd">$59.63</td>
+                          <td class="detail-tbodytd">$59.63</td>
+                          <td class="detail-tbodytd"><span>
+                              <img src="Assets/Tables-img/amazon.svg">
+                            </span></td>
+                          <td class="detail-tbodytd"><small class="text-white">1258542314 <span class=" copy-icon"
+                                data-toggle="tooltip" data-placement="top" title="Copy"><i
+                                  class="far fa-copy copy-icon"></i></span></small>
+
+                          </td>
+                          <td class="detail-tbodytd">
+                            <span class="new">
+                              New
+                            </span>
+                          </td>
+                          <td class="detail-tbodytd">
+                            <label class="switch">
+                              <input type="checkbox">
+                              <span class="slider round"></span>
+                            </label>
+                          </td>
+                        </tr>
+                        <tr>
+                          <th scope="row" class="detail-tbodyth">
+                            <label class="container">
+                              <input type="checkbox" />
+                              <span class="checkmark"></span>
+                            </label>
+                          </th>
+                          <td class="detail-tbodytd">
+                            <div class="media">
+                              <img class="media-img" src="./Assets/Tables-img/fever-tree.svg" alt="..." />
+                              <div class="media-body">
+                                <p class="m-0 img-detail">Filtere- Allergern Defence</p>
+                                <small> <span class="border-bottom border-secondary pb-2 media-small">
+                                    BSR-SCHOOL-9-7-20-ID-001257
+
+                                </small>
+
+                              </div>
+                            </div>
+                          </td>
+                          <td class="detail-tbodytd">4</td>
+                          <td class="detail-tbodytd">$59.63</td>
+                          <td class="detail-tbodytd">$59.63</td>
+                          <td class="detail-tbodytd"><span>
+                              <img src="Assets/Tables-img/Warning.svg">
+                            </span></td>
+                          <td class="detail-tbodytd"><a href="#" class="tracking-number"><ins>Add Tracking No.</ins></a>
+                          </td>
+                          <td class="detail-tbodytd">
+                            <span class="Processing">
+                              Processing
+                            </span>
+                          </td>
+                          <td class="detail-tbodytd">
+                            <label class="switch">
+                              <input type="checkbox" checked>
+                              <span class="slider round"></span>
+                            </label>
+
+                          </td>
+                        </tr>
+                        <tr>
+                          <th scope="row" class="detail-tbodyth">
+                            <label class="container">
+                              <input type="checkbox" />
+                              <span class="checkmark"></span>
+                            </label>
+                          </th>
+                          <td class="detail-tbodytd">
+                            <div class="media">
+                              <img class="media-img" src="./Assets/Tables-img/tree.svg" alt="..." />
+                              <div class="media-body">
+                                <p class="m-0 img-detail">Filtere- Allergern Defence</p>
+                                <small> <span class="border-bottom border-secondary pb-2 media-small">
+                                    BSR-SCHOOL-9-7-20-ID-001257
+
+                                </small>
+
+                              </div>
+                            </div>
+                          </td>
+                          <td class="detail-tbodytd">4</td>
+                          <td class="detail-tbodytd">$59.63</td>
+                          <td class="detail-tbodytd">$59.63</td>
+                          <td class="detail-tbodytd"><span>
+                              <img src="Assets/Tables-img/walmart.svg">
+                            </span></td>
+                          <td class="detail-tbodytd"><small class="text-white">1258542314 <span class="copy-icon"
+                                data-toggle="tooltip" data-placement="top" title="Copy"><i
+                                  class="far fa-copy copy-icon"></i></span></small>
+
+                          </td>
+                          <td class="detail-tbodytd">
+                            <span class="Processed">
+                              Processed
+                            </span>
+                          </td>
+                          <td class="detail-tbodytd">
+                            <label class="switch">
+                              <input type="checkbox">
+                              <span class="slider round"></span>
+                            </label>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+  </section>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+    crossorigin="anonymous"></script>
+  <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+</body>
+
+</html>
